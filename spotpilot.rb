@@ -5,21 +5,21 @@
 class Spotpilot < Formula
   desc "Control Spotify from the command line — built for AI agents"
   homepage "https://github.com/ignatij/spotpilot"
-  version "0.1.0"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.0/spotpilot_darwin_amd64.tar.gz"
-      sha256 "4431ef3562def50e01739fe4250aa5a5c679c425bdf84c818a689c9207b020c8"
+      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.3/spotpilot_darwin_amd64.tar.gz"
+      sha256 "a7373307a6f1943e6b10b0577a7a845ffbd19445af40527938d32f4c13efd4bd"
 
       define_method(:install) do
         bin.install "spotpilot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.0/spotpilot_darwin_arm64.tar.gz"
-      sha256 "3e53abdd3683c41601577184158d6e9ca311fbd43314be54561ba983f909aa1d"
+      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.3/spotpilot_darwin_arm64.tar.gz"
+      sha256 "ac46f136b6266d3e6dd0b658fd1f26b9cd30fba4dbac74b2b9e16ea9b54fe80f"
 
       define_method(:install) do
         bin.install "spotpilot"
@@ -29,15 +29,15 @@ class Spotpilot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.0/spotpilot_linux_amd64.tar.gz"
-      sha256 "4879cd6fabc537001da2738006eb3742d00dc464bc27a2fb9d9397961f277d63"
+      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.3/spotpilot_linux_amd64.tar.gz"
+      sha256 "c911b3ce405760a24d1ddfe5606f872b8e87a714d203c6ef33ea8c8b48620961"
       define_method(:install) do
         bin.install "spotpilot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.0/spotpilot_linux_arm64.tar.gz"
-      sha256 "85808ad3d88f0def0269e8315c7e3350172c6930676d3114909e8d311b1ba290"
+      url "https://github.com/ignatij/spotpilot/releases/download/v0.1.3/spotpilot_linux_arm64.tar.gz"
+      sha256 "4bb59c2d86032b908c906741c64ee65dc6ee5a5f22d59c6435a21f7b4286f5d0"
       define_method(:install) do
         bin.install "spotpilot"
       end
